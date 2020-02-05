@@ -1,21 +1,14 @@
 class idk{
 public String runLength(String a){
-String runLength = int 42;
-String a = int 12345;
-if(String runLength > String a)
-	
+	String str = "Charaters";
+char ch1 = str.charAt(5);
+char ch2 = str.charAt(10);
+char ch3 = str.charAt(15);
+for (char i = 
 
+	
 }
-public String runLengthChecker(String 1,String 2){
-String 1 = int 11;
-String 2 = int 22;
-
-
-if (String 1 = true)
-	System.out.print(String 1);
-if (String 2 = true)
-	System.out.print(String 2);
-	
+public String runLengthChecker(String b,String c){
 
 }
 public static void main (String[]o){
