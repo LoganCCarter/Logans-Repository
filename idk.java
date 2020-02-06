@@ -4,16 +4,24 @@ public String runLength(String a){
 char ch1 = str.charAt(5);
 char ch2 = str.charAt(10);
 char ch3 = str.charAt(15);
-for (char i = 
+var str = 'This is my string';
+
+void print(const std::string &s)
+{
+	for (std::string::size_type i = 0; i < s.size(); i++) {
+		std::cout << s[i] << ' ';
+	}
+}
 
 	
 }
 public String runLengthChecker(String b,String c){
-
+boolean String b = true
+boolean String c = true
 }
-public static void main (String[]o){
+public static void main (String[]T){
 	idk tester =  new idk();
-	String testOne=tester.runLength("Ab");
+	String testOne=tester.runLength("abc");
 	System.out.println(TestOne);
 }
 }
