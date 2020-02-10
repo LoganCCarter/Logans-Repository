@@ -35,50 +35,43 @@ class robertD{
 }
 ​
 class dinero{
+	
+	public static robertD.Moneys newCoin(){
+		int randomNumber;
+		randomNumber = (int) (Math.random() * 6);
+/*		robertD.Moneys[] randomCoin = new robertD.Moneys[]{robertD.Moneys.penny, 
+														   robertD.Moneys.nickel, 
+														   robertD.Moneys.dime, 
+														   robertD.Moneys.quarter, 
+														   robertD.Moneys.halfdollar, 
+														   robertD.Moneys.dollar};*/
+		return robertD.Moneys.values()[randomNumber];
+	}
+	
 	public static void main(String... v){
 		robertD Duckets = new robertD();
 		
-		Duckets.pocketChange = new robertD.Moneys[20];
-		sum = 1
-		// give each of the coins a value
-		/*
-		for (robertD.Moneys coin:
-		*/
-		for(robertD.Moneys coin: Duckets.pocketChange){ //might need different for loop
-			//System.out.println(Duckets.getValue(coin) );
-			coin = robertD.Moneys.penny;
-			coin = robertD.Moneys.nickel;
-			coin = robertD.Moneys.dime;
-			coin = robertD.Moneys.quarter;
-			coin = robertD.Moneys.penny;
-			coin = robertD.Moneys.quarter;
-			coin = robertD.Moneys.dollar;
-			coin = robertD.Moneys.dollar;
-			coin = robertD.Moneys.penny;
-			coin = robertD.Moneys.nickel;
-			coin = robertD.Moneys.dime;
-			coin = robertD.Moneys.quarter;
-			coin = robertD.Moneys.penny;
-			coin = robertD.Moneys.quarter;
-			coin = robertD.Moneys.dollar;
-			coin = robertD.Moneys.dollar;
-			//System.out.println(Duckets.getValue(coin) );
-			Duckets.pocketChange[0] = coin;
-			
+		Duckets.pocketChange = new robertD.Moneys[100];
+​
+		// give each of the coins a value		
+		for(int index = 0; index < Duckets.pocketChange.length; index++){
+			Duckets.pocketChange[index] = newCoin();
 		}
 		
-		System.out.println(Duckets.getValue(Duckets.pocketChange[0]) );
+		int sum=0;
+		
+		for(robertD.Moneys coin: Duckets.pocketChange){ 
+			System.out.print(coin + " |" );
+			sum += Duckets.getValue(coin);
+		}
+		System.out.println( );
+​
+		System.out.println("$"+(double)sum/100.00 );
+		
 		//Show me the coins in your pocketChange.
 		
 		
 		//Give me the sum of those coins.
-		System.out.println(Duckets.getValue + sum)
-			
-			
-			
-			
-			
-			
-			
+		
 	}
 }
