@@ -5,9 +5,9 @@ class robertD{
 	enum Moneys{
 		penny, nickel, dime, quarter, halfdollar, dollar
 	}
-​
+
 	public int getValue(Moneys coin){
-​
+
 		int value = 0;
 		switch (coin){
 			case penny:
@@ -29,11 +29,11 @@ class robertD{
 				value = 100;
 				break;
 		}
-​
+
 		return value;
 	}
 }
-​
+
 class dinero{
 	
 	public static robertD.Moneys newCoin(){
@@ -52,7 +52,7 @@ class dinero{
 		robertD Duckets = new robertD();
 		
 		Duckets.pocketChange = new robertD.Moneys[100];
-​
+
 		// give each of the coins a value		
 		for(int index = 0; index < Duckets.pocketChange.length; index++){
 			Duckets.pocketChange[index] = newCoin();
@@ -65,7 +65,7 @@ class dinero{
 			sum += Duckets.getValue(coin);
 		}
 		System.out.println( );
-​
+
 		System.out.println("$"+(double)sum/100.00 );
 		
 		//Show me the coins in your pocketChange.
