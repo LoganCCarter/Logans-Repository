@@ -1,0 +1,6 @@
+#P1 {
+background: #FF0000;
+background: -moz-linear-gradient(-45deg, #FF0000 0%, #FFFFFF 50%, #0F00FF 100%);
+background: -webkit-linear-gradient(-45deg, #FF0000 0%, #FFFFFF 50%, #0F00FF 100%);
+background: linear-gradient(135deg, #FF0000 0%, #FFFFFF 50%, #0F00FF 100%);
+}
